@@ -1,0 +1,13 @@
+package com.idat.ec3.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.idat.ec3.repository.DocenteRepository;
+import com.idat.ec3.service.DocenteService;
+
+public class DocenteImpl implements DocenteService {
+	
+	@Autowired
+	DocenteRepository docenteDAO;
+
+}

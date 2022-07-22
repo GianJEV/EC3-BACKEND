@@ -1,0 +1,5 @@
+package com.idat.ec3.service;
+
+public interface CarreraService {
+
+}

@@ -1,0 +1,21 @@
+package com.idat.ec3.service;
+
+import java.util.List;
+
+import com.idat.ec3.model.Estudiante;
+
+public interface EstudianteService {
+	//LISTAR
+	List<Estudiante> listarEstudiante();
+	
+	//CREAR
+	
+	
+	//EDITAR
+	
+	
+	//ELIMINAR
+	
+	
+	//BUSCAR
+}

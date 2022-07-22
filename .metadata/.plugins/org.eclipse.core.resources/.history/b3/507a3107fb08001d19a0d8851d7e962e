@@ -1,0 +1,5 @@
+package com.idat.ec3.model;
+
+public class Docente {
+
+}

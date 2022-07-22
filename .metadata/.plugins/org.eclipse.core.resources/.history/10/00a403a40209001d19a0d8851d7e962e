@@ -1,0 +1,12 @@
+package com.idat.ec3.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.idat.ec3.repository.CarreraRepository;
+import com.idat.ec3.service.CarreraService;
+
+public class CarreraImpl implements CarreraService{
+
+	@Autowired
+	CarreraRepository carreraDAO;
+}

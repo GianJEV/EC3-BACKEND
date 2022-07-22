@@ -1,0 +1,44 @@
+package com.idat.ec3.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.idat.ec3.model.Estudiante;
+import com.idat.ec3.repository.EstudianteRepository;
+import com.idat.ec3.service.EstudianteService;
+
+public class EstudianteImpl implements EstudianteService {
+
+	@Autowired
+	EstudianteRepository estudianteDAO;
+	
+	@Override
+	public List<Estudiante> listarEstudiante() {
+		estudianteDAO.findAll();
+	}
+
+	@Override
+	public Estudiante crearEstudiante(Estudiante e) {
+		return estudianteDAO.save(e);
+	}
+
+	@Override
+	public Estudiante EditarEstudiante(Estudiante e) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void eliminarEstudiante(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Estudiante ListarPorId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.idat.ec3.service;
+
+import java.util.List;
+
+import com.idat.ec3.model.Sede;
+
+public interface SedeRepository {
+	//LISTAR
+	List<Sede> listarSede();
+	
+	//CREAR
+	Sede crearSede(Sede Sede);
+	
+	//EDITAR
+	Sede EditarSede(Sede Sede);
+	
+	//ELIMINAR
+	void eliminarSede(Long id);
+	
+	//BUSCAR
+	Sede ListarPorId(Long id);
+}

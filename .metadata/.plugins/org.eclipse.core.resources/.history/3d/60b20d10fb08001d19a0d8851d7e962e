@@ -1,0 +1,39 @@
+package com.idat.ec3.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="docente")
+public class Docente {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long idDocente;
+	
+	@Column(name="nombres", length = 50, nullable = false)
+	private String nombres;
+	
+	@Column(name="apellidos", length = 50, nullable = false)
+	private String apellidos;
+	
+	@Column(name="email", length = 50, nullable = false)
+	private String email;
+	
+	@Column(name="numero", length = 9, nullable = false)
+	private String numero;
+	
+	@Column(name="ciclo", length = 20, nullable = false)
+	private String ciclo;
+	
+	@ManyToOne
+	@JoinColumn(name="idSede")
+	private Sede sede;
+	
+}

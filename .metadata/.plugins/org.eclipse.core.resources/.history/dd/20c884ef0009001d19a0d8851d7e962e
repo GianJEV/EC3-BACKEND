@@ -1,0 +1,22 @@
+package com.idat.ec3.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.idat.ec3.model.Estudiante;
+import com.idat.ec3.service.EstudianteService;
+
+@RestController
+public class EstudianteController {
+	
+	@Autowired
+	private EstudianteService service;
+	
+	@GetMapping
+	public List<Estudiante> listarEstudiante{
+		return service.listarEstudiante();
+	}
+	
+	
+}

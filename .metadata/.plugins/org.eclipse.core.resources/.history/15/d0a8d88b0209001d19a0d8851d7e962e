@@ -1,0 +1,10 @@
+package com.idat.ec3.impl;
+
+import com.idat.ec3.repository.SedeRepository;
+import com.idat.ec3.service.SedeService;
+
+public class SedeImpl implements SedeService{
+	
+	@Autowired
+	SedeRepository sedeDAO;
+}
